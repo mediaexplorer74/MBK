@@ -4,6 +4,14 @@ My general goal is to create Microsoft Band UWP/iOS/Droid app, superlite version
 
 Dev. engine: Xamarin Forms (but Uno also persists for some multi-platform experimenation...)
 
+## Concept (few images)
+<p align="center">
+  <img src="Images/intro.png">  
+</p>
+<p align="center">
+  <img src="Images/outro.png"> 
+</p>
+
 
 ## Last step
 
