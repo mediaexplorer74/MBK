@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MSFTBandApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3">
+            <Label Text="Welcome to Xamarin.Forms!" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="Medium"/>
+        </Frame>
+        <Label Text="Start developing now" FontSize="Large"/>
+        <Label Text="Give it a try!" 
+               FontSize="Small"/>
+
+        <Label FontSize="Small">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
