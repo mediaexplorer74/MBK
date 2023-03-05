@@ -5,6 +5,17 @@ My general goal is to create Microsoft Band UWP/iOS/Droid app, superlite version
 Dev. engine: Xamarin Forms (but Uno also persists for some multi-platform experimenation...)
 
 
+## Last step
+
+### Microsoft.Band.Kit 
+
+Libs reversed: 
+```
+Microsoft.Band
+Microsoft.Band.Portable
+Microsoft.Band.Phone_UAP
+Microsoft.Band.Store_UAP
+```
 ## ..
 AS IS. No support. RnD only / DIY
 
