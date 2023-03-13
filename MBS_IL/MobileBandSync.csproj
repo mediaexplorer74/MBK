@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{FBC2202C-CD49-42AD-B9C8-DA4F7FB95E21}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">ArmThumb2</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>11.0</LangVersion>
+    <AssemblyName>MobileBandSync</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhoneApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'ArmThumb2' ">
+    <PlatformTarget>ArmThumb2</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="Windows" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Collections" />
+    <Reference Include="WinRTXamlToolkit.Controls.DataVisualization">
+      <HintPath>C:\Users\Admin\Desktop\re\mobile\WinRTXamlToolkit.Controls.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Graphics.Canvas" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime.UI.Xaml" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Xml.XmlSerializer" />
+    <Reference Include="System.Xml.ReaderWriter" />
+    <Reference Include="System.Threading" />
+    <Reference Include="Microsoft.Data.Sqlite">
+      <HintPath>C:\Users\Admin\Desktop\re\mobile\Microsoft.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="WinRTXamlToolkit">
+      <HintPath>C:\Users\Admin\Desktop\re\mobile\WinRTXamlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Net.NetworkInformation" />
+    <Reference Include="System.Data.Common">
+      <HintPath>C:\Users\Admin\Desktop\re\mobile\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MobileBandSync.Common\Counter.cs" />
+    <Compile Include="MobileBandSync.Common\DailySummary.cs" />
+    <Compile Include="MobileBandSync.Common\DistanceAnnotationType.cs" />
+    <Compile Include="MobileBandSync.Common\EventType.cs" />
+    <Compile Include="MobileBandSync.Common\ExportType.cs" />
+    <Compile Include="MobileBandSync.Common\GpsPosition.cs" />
+    <Compile Include="MobileBandSync.Common\HeartRate.cs" />
+    <Compile Include="MobileBandSync.Common\LoadStateEventArgs.cs" />
+    <Compile Include="MobileBandSync.Common\LoadStateEventHandler.cs" />
+    <Compile Include="MobileBandSync.Common\NavigationHelper.cs" />
+    <Compile Include="MobileBandSync.Common\ObservableDictionary.cs" />
+    <Compile Include="MobileBandSync.Common\RelayCommand.cs" />
+    <Compile Include="MobileBandSync.Common\RestType.cs" />
+    <Compile Include="MobileBandSync.Common\SaveStateEventArgs.cs" />
+    <Compile Include="MobileBandSync.Common\SaveStateEventHandler.cs" />
+    <Compile Include="MobileBandSync.Common\Sensor.cs" />
+    <Compile Include="MobileBandSync.Common\SensorLog.cs" />
+    <Compile Include="MobileBandSync.Common\SensorLogSequence.cs" />
+    <Compile Include="MobileBandSync.Common\SensorLogType.cs" />
+    <Compile Include="MobileBandSync.Common\SensorValueCollection1.cs" />
+    <Compile Include="MobileBandSync.Common\SensorValueCollection2.cs" />
+    <Compile Include="MobileBandSync.Common\SensorValueCollection3.cs" />
+    <Compile Include="MobileBandSync.Common\SkinTemperature.cs" />
+    <Compile Include="MobileBandSync.Common\SleepSummary.cs" />
+    <Compile Include="MobileBandSync.Common\Steps.cs" />
+    <Compile Include="MobileBandSync.Common\SuspensionManager.cs" />
+    <Compile Include="MobileBandSync.Common\SuspensionManagerException.cs" />
+    <Compile Include="MobileBandSync.Common\SyncViewModel.cs" />
+    <Compile Include="MobileBandSync.Common\TrackPoint.cs" />
+    <Compile Include="MobileBandSync.Common\UnknownData.cs" />
+    <Compile Include="MobileBandSync.Common\Waypoint.cs" />
+    <Compile Include="MobileBandSync.Common\Workout.cs" />
+    <Compile Include="MobileBandSync.Common\WorkoutFilterData.cs" />
+    <Compile Include="MobileBandSync.Common\WorkoutMarker.cs" />
+    <Compile Include="MobileBandSync.Common\WorkoutMarker2.cs" />
+    <Compile Include="MobileBandSync.Common\WorkoutPoint.cs" />
+    <Compile Include="MobileBandSync.Common\WorkoutSummary.cs" />
+    <Compile Include="MobileBandSync.Data\DiagramData.cs" />
+    <Compile Include="MobileBandSync.Data\SleepItem.cs" />
+    <Compile Include="MobileBandSync.Data\TrackItem.cs" />
+    <Compile Include="MobileBandSync.Data\TracksLoadedEventArgs.cs" />
+    <Compile Include="MobileBandSync.Data\WorkoutData.cs" />
+    <Compile Include="MobileBandSync.Data\WorkoutDataSource.cs" />
+    <Compile Include="MobileBandSync.Data\WorkoutItem.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\Activator.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\AddToCollection.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\AddToDictionary.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\Getter.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\Setter.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\XamlMember.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\XamlSystemBaseType.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\XamlTypeInfoProvider.cs" />
+    <Compile Include="MobileBandSync.MobileBandSync_XamlTypeInfo\XamlUserType.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Command\CommandDataSize.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Command\CommandEnum.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Command\CommandHelper.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Command\CommandPacket.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Command\CommandResponse.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Exceptions\BandConnected.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Exceptions\BandConnectedNot.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Exceptions\BandConnectionConnected.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Exceptions\BandConnectionConnectedNot.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Exceptions\BandSocketConnected.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Exceptions\BandSocketConnectedNot.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Facility\FacilityEnum.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Helpers\TimeHelper.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Includes\ByteStream.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Libs\Network.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Libs\Services.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Libs\Tiles.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Metrics\BandVersion.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Metrics\Sleep.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.Notifications\NotificationsEnum.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.UWP\BandClientUWP.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.UWP\BandSocketUWP.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib.UWP\MSFTBandLibUWP.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\AsyncHelpers.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\Band.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\BandBitConverter.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\BandClientInterface.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\BandConnection.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\BandConnectionInterface.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\BandInterface.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\BandMetadataRange.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\BandSocketInterface.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\BandStatus.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\CancellationTokenExtension.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\DeviceCommands.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\MSFTBandLib.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\ProgressEventArgs.cs" />
+    <Compile Include="MobileBandSync.MSFTBandLib\TX.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\AbstractSource_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\AbstractStep_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\ActivityLap_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\ActivityList_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\ActivityReference_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Activity_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Application_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\BuildType_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Build_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Cadence_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\CaloriesBurned_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\CourseFolder_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\CourseLap_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\CoursePointType_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\CoursePoint_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Courses_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Course_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\CustomHeartRateZone_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\CustomSpeedZone_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Device_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Distance_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Duration_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\FirstSport_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Folders_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\HeartRateAbove_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\HeartRateAsPercentOfMax_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\HeartRateBelow_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\HeartRateInBeatsPerMinute_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\HeartRateValue_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\HeartRate_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\HistoryFolder_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\History_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Intensity_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\MultiSportFolder_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\MultiSportSession_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\NameKeyReference_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\NextSport_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\None_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Plan_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Position_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\PredefinedHeartRateZone_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\PredefinedSpeedZone_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\QuickWorkout_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Repeat_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\SensorState_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\SpeedType_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Speed_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Sport_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Step_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Target_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Time_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Trackpoint_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\TrainingCenterDatabase_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\TrainingType_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Training_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\TriggerMethod_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\UserInitiated_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Version_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Week_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\WorkoutFolder_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Workouts_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Workout_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx.Entities\Zone_t.cs" />
+    <Compile Include="MobileBandSync.OpenTcx\OpenTcxException.cs" />
+    <Compile Include="MobileBandSync.OpenTcx\Tcx.cs" />
+    <Compile Include="MobileBandSync.OpenTcx\Validator.cs" />
+    <Compile Include="MobileBandSync\App.cs" />
+    <Compile Include="MobileBandSync\HubPage.cs" />
+    <Compile Include="MobileBandSync\ItemPage.cs" />
+    <Compile Include="MobileBandSync\Program.cs" />
+    <Compile Include="MobileBandSync\SectionPage.cs" />
+    <Compile Include="MobileBandSync\SleepPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

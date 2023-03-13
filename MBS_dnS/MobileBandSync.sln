@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileBandSync", "MobileBandSync\MobileBandSync.csproj", "{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|ARM = Debug|ARM
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Debug|Any CPU.ActiveCfg = Debug|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Debug|Any CPU.Build.0 = Debug|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Debug|Mixed Platforms.ActiveCfg = Debug|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Debug|Mixed Platforms.Build.0 = Debug|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Debug|ARM.ActiveCfg = Debug|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Debug|ARM.Build.0 = Debug|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Release|Any CPU.ActiveCfg = Release|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Release|Any CPU.Build.0 = Release|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Release|Mixed Platforms.ActiveCfg = Release|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Release|Mixed Platforms.Build.0 = Release|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Release|ARM.ActiveCfg = Release|ARM
+		{1461F7B7-9F8F-471D-BC51-5DA67FCBC594}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

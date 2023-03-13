@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Admin\Desktop\re\mobile\MobileBandSync.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3EF3DE0-D9D1-4ADB-A501-F41B8C573593}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>MobileBandSync</AssemblyName>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>MobileBandSync</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Sqlite">
+      <HintPath>lib\Microsoft.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Graphics.Canvas">
+      <HintPath>lib\Microsoft.Graphics.Canvas.winmd</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Data.Common">
+      <HintPath>lib\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Net.NetworkInformation" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Reflection.Extensions" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime" />
+    <Reference Include="System.Runtime.Serialization.Xml" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime.UI.Xaml" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Xml.ReaderWriter" />
+    <Reference Include="System.Xml.XmlSerializer" />
+    <Reference Include="WinRTXamlToolkit">
+      <HintPath>lib\WinRTXamlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WinRTXamlToolkit.Controls.DataVisualization">
+      <HintPath>lib\WinRTXamlToolkit.Controls.DataVisualization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="HubPage.cs" />
+    <Compile Include="ItemPage.cs" />
+    <Compile Include="SectionPage.cs" />
+    <Compile Include="SleepPage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\XamlTypeInfoProvider.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\XamlSystemBaseType.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\Activator.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\AddToCollection.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\AddToDictionary.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\XamlUserType.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\Getter.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\Setter.cs" />
+    <Compile Include="MobileBandSync_XamlTypeInfo\XamlMember.cs" />
+    <Compile Include="OpenTcx\OpenTcxException.cs" />
+    <Compile Include="OpenTcx\Tcx.cs" />
+    <Compile Include="OpenTcx\Validator.cs" />
+    <Compile Include="OpenTcx\Entities\TrainingCenterDatabase_t.cs" />
+    <Compile Include="OpenTcx\Entities\Folders_t.cs" />
+    <Compile Include="OpenTcx\Entities\History_t.cs" />
+    <Compile Include="OpenTcx\Entities\HistoryFolder_t.cs" />
+    <Compile Include="OpenTcx\Entities\ActivityReference_t.cs" />
+    <Compile Include="OpenTcx\Entities\CoursePoint_t.cs" />
+    <Compile Include="OpenTcx\Entities\Position_t.cs" />
+    <Compile Include="OpenTcx\Entities\CoursePointType_t.cs" />
+    <Compile Include="OpenTcx\Entities\CourseLap_t.cs" />
+    <Compile Include="OpenTcx\Entities\HeartRateInBeatsPerMinute_t.cs" />
+    <Compile Include="OpenTcx\Entities\HeartRateValue_t.cs" />
+    <Compile Include="OpenTcx\Entities\HeartRateAsPercentOfMax_t.cs" />
+    <Compile Include="OpenTcx\Entities\Intensity_t.cs" />
+    <Compile Include="OpenTcx\Entities\Course_t.cs" />
+    <Compile Include="OpenTcx\Entities\Trackpoint_t.cs" />
+    <Compile Include="OpenTcx\Entities\SensorState_t.cs" />
+    <Compile Include="OpenTcx\Entities\AbstractSource_t.cs" />
+    <Compile Include="OpenTcx\Entities\Application_t.cs" />
+    <Compile Include="OpenTcx\Entities\Build_t.cs" />
+    <Compile Include="OpenTcx\Entities\Version_t.cs" />
+    <Compile Include="OpenTcx\Entities\BuildType_t.cs" />
+    <Compile Include="OpenTcx\Entities\Device_t.cs" />
+    <Compile Include="OpenTcx\Entities\Zone_t.cs" />
+    <Compile Include="OpenTcx\Entities\CustomHeartRateZone_t.cs" />
+    <Compile Include="OpenTcx\Entities\PredefinedHeartRateZone_t.cs" />
+    <Compile Include="OpenTcx\Entities\CustomSpeedZone_t.cs" />
+    <Compile Include="OpenTcx\Entities\SpeedType_t.cs" />
+    <Compile Include="OpenTcx\Entities\PredefinedSpeedZone_t.cs" />
+    <Compile Include="OpenTcx\Entities\Target_t.cs" />
+    <Compile Include="OpenTcx\Entities\None_t.cs" />
+    <Compile Include="OpenTcx\Entities\Cadence_t.cs" />
+    <Compile Include="OpenTcx\Entities\HeartRate_t.cs" />
+    <Compile Include="OpenTcx\Entities\Speed_t.cs" />
+    <Compile Include="OpenTcx\Entities\Duration_t.cs" />
+    <Compile Include="OpenTcx\Entities\UserInitiated_t.cs" />
+    <Compile Include="OpenTcx\Entities\CaloriesBurned_t.cs" />
+    <Compile Include="OpenTcx\Entities\HeartRateBelow_t.cs" />
+    <Compile Include="OpenTcx\Entities\HeartRateAbove_t.cs" />
+    <Compile Include="OpenTcx\Entities\Distance_t.cs" />
+    <Compile Include="OpenTcx\Entities\Time_t.cs" />
+    <Compile Include="OpenTcx\Entities\AbstractStep_t.cs" />
+    <Compile Include="OpenTcx\Entities\Step_t.cs" />
+    <Compile Include="OpenTcx\Entities\Repeat_t.cs" />
+    <Compile Include="OpenTcx\Entities\Workout_t.cs" />
+    <Compile Include="OpenTcx\Entities\Sport_t.cs" />
+    <Compile Include="OpenTcx\Entities\NextSport_t.cs" />
+    <Compile Include="OpenTcx\Entities\ActivityLap_t.cs" />
+    <Compile Include="OpenTcx\Entities\TriggerMethod_t.cs" />
+    <Compile Include="OpenTcx\Entities\Activity_t.cs" />
+    <Compile Include="OpenTcx\Entities\Training_t.cs" />
+    <Compile Include="OpenTcx\Entities\QuickWorkout_t.cs" />
+    <Compile Include="OpenTcx\Entities\Plan_t.cs" />
+    <Compile Include="OpenTcx\Entities\TrainingType_t.cs" />
+    <Compile Include="OpenTcx\Entities\FirstSport_t.cs" />
+    <Compile Include="OpenTcx\Entities\MultiSportSession_t.cs" />
+    <Compile Include="OpenTcx\Entities\ActivityList_t.cs" />
+    <Compile Include="OpenTcx\Entities\CourseFolder_t.cs" />
+    <Compile Include="OpenTcx\Entities\NameKeyReference_t.cs" />
+    <Compile Include="OpenTcx\Entities\Courses_t.cs" />
+    <Compile Include="OpenTcx\Entities\WorkoutFolder_t.cs" />
+    <Compile Include="OpenTcx\Entities\Workouts_t.cs" />
+    <Compile Include="OpenTcx\Entities\MultiSportFolder_t.cs" />
+    <Compile Include="OpenTcx\Entities\Week_t.cs" />
+    <Compile Include="MSFTBandLib\BandMetadataRange.cs" />
+    <Compile Include="MSFTBandLib\BandStatus.cs" />
+    <Compile Include="MSFTBandLib\Band`1.cs" />
+    <Compile Include="MSFTBandLib\BandClientInterface.cs" />
+    <Compile Include="MSFTBandLib\BandConnection`1.cs" />
+    <Compile Include="MSFTBandLib\BandConnectionInterface.cs" />
+    <Compile Include="MSFTBandLib\TX.cs" />
+    <Compile Include="MSFTBandLib\CancellationTokenExtension.cs" />
+    <Compile Include="MSFTBandLib\BandBitConverter.cs" />
+    <Compile Include="MSFTBandLib\DeviceCommands.cs" />
+    <Compile Include="MSFTBandLib\BandInterface.cs" />
+    <Compile Include="MSFTBandLib\ProgressEventArgs.cs" />
+    <Compile Include="MSFTBandLib\BandSocketInterface.cs" />
+    <Compile Include="MSFTBandLib\MSFTBandLib.cs" />
+    <Compile Include="MSFTBandLib\AsyncHelpers.cs" />
+    <Compile Include="MSFTBandLib\UWP\BandClientUWP.cs" />
+    <Compile Include="MSFTBandLib\UWP\BandSocketUWP.cs" />
+    <Compile Include="MSFTBandLib\UWP\MSFTBandLibUWP.cs" />
+    <Compile Include="MSFTBandLib\Notifications\NotificationsEnum.cs" />
+    <Compile Include="MSFTBandLib\Metrics\BandVersion.cs" />
+    <Compile Include="MSFTBandLib\Metrics\Sleep.cs" />
+    <Compile Include="MSFTBandLib\Libs\Network.cs" />
+    <Compile Include="MSFTBandLib\Libs\Services.cs" />
+    <Compile Include="MSFTBandLib\Libs\Tiles.cs" />
+    <Compile Include="MSFTBandLib\Includes\ByteStream.cs" />
+    <Compile Include="MSFTBandLib\Helpers\TimeHelper.cs" />
+    <Compile Include="MSFTBandLib\Facility\FacilityEnum.cs" />
+    <Compile Include="MSFTBandLib\Exceptions\BandConnected.cs" />
+    <Compile Include="MSFTBandLib\Exceptions\BandConnectedNot.cs" />
+    <Compile Include="MSFTBandLib\Exceptions\BandConnectionConnected.cs" />
+    <Compile Include="MSFTBandLib\Exceptions\BandConnectionConnectedNot.cs" />
+    <Compile Include="MSFTBandLib\Exceptions\BandSocketConnected.cs" />
+    <Compile Include="MSFTBandLib\Exceptions\BandSocketConnectedNot.cs" />
+    <Compile Include="MSFTBandLib\Command\CommandDataSize.cs" />
+    <Compile Include="MSFTBandLib\Command\CommandEnum.cs" />
+    <Compile Include="MSFTBandLib\Command\CommandHelper.cs" />
+    <Compile Include="MSFTBandLib\Command\CommandPacket.cs" />
+    <Compile Include="MSFTBandLib\Command\CommandResponse.cs" />
+    <Compile Include="Data\WorkoutDataSource.cs" />
+    <Compile Include="Data\DiagramData.cs" />
+    <Compile Include="Data\WorkoutItem.cs" />
+    <Compile Include="Data\TracksLoadedEventArgs.cs" />
+    <Compile Include="Data\TrackItem.cs" />
+    <Compile Include="Data\SleepItem.cs" />
+    <Compile Include="Data\WorkoutData.cs" />
+    <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\LoadStateEventHandler.cs" />
+    <Compile Include="Common\SaveStateEventHandler.cs" />
+    <Compile Include="Common\LoadStateEventArgs.cs" />
+    <Compile Include="Common\SaveStateEventArgs.cs" />
+    <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\SensorLogType.cs" />
+    <Compile Include="Common\ExportType.cs" />
+    <Compile Include="Common\RestType.cs" />
+    <Compile Include="Common\DistanceAnnotationType.cs" />
+    <Compile Include="Common\EventType.cs" />
+    <Compile Include="Common\HeartRate.cs" />
+    <Compile Include="Common\Steps.cs" />
+    <Compile Include="Common\WorkoutMarker.cs" />
+    <Compile Include="Common\WorkoutMarker2.cs" />
+    <Compile Include="Common\SleepSummary.cs" />
+    <Compile Include="Common\Waypoint.cs" />
+    <Compile Include="Common\Counter.cs" />
+    <Compile Include="Common\Sensor.cs" />
+    <Compile Include="Common\SensorValueCollection1.cs" />
+    <Compile Include="Common\SensorValueCollection2.cs" />
+    <Compile Include="Common\SensorValueCollection3.cs" />
+    <Compile Include="Common\WorkoutSummary.cs" />
+    <Compile Include="Common\DailySummary.cs" />
+    <Compile Include="Common\SkinTemperature.cs" />
+    <Compile Include="Common\UnknownData.cs" />
+    <Compile Include="Common\SensorLogSequence.cs" />
+    <Compile Include="Common\GpsPosition.cs" />
+    <Compile Include="Common\WorkoutPoint.cs" />
+    <Compile Include="Common\TrackPoint.cs" />
+    <Compile Include="Common\Workout.cs" />
+    <Compile Include="Common\SensorLog.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Common\SuspensionManagerException.cs" />
+    <Compile Include="Common\SyncViewModel.cs" />
+    <Compile Include="Common\WorkoutFilterData.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

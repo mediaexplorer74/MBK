@@ -1,16 +1,14 @@
 # MBK ("Microsoft.Bank.Kit")
-My uncompleted "10 attempts" to create Multi-platform version of Microsoft Band app.
-My general goal is to create Microsoft Band UWP/iOS/Droid app, superlite version without any great design but minimum "ms band api cloud functionality". Draft/Proto.
 
-Dev. engine: Xamarin Forms (but Uno also persists for some multi-platform experimenation...)
-
-## Concept (few images)
 <p align="center">
   <img src="Images/intro.png">  
 </p>
-<p align="center">
-  <img src="Images/outro.png"> 
-</p>
+
+
+My uncompleted "10 attempts" to create "Mono-" (and "Multi-")platform version of Microsoft Band app that I r.e. by huge r.e. tools (Reflector, JetPeeks, IL, etc.). :)
+My general goal was to re-create (rapidly reconstruct , of cause!) Microsoft Band UWP/iOS/Droid app, superlite version without any great design but minimum "ms band api cloud functionality". :)
+
+Dev. engines: UWP; Xamarin Forms (but Uno also persists for some multi-platform experimenation...)
 
 
 ## Last step
